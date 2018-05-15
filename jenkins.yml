@@ -1,0 +1,6 @@
+---
+- hosts: all
+  vars:
+    jenkins_package_state: latest
+  roles:
+  - geerlingguy.jenkins
