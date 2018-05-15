@@ -2,5 +2,8 @@
 - hosts: all
   vars:
     jenkins_package_state: latest
+    docker_users:
+    - jenkins
   roles:
   - geerlingguy.jenkins
+  - geerlingguy.docker

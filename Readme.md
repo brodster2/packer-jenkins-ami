@@ -12,9 +12,9 @@ This repo is a template to build an AWS Ubuntu AMI using [Packer](https://www.pa
 
 To create the AMI:
 
-1. Install the required Ansible-Galaxy script: 
+1. Install the required Ansible-Galaxy roles: 
 
-    `ansible-galaxy install geerlingguy.jenkins`
+    `ansible-galaxy install -r requirements.yml`
 
 2. Run the Packer script:
 
