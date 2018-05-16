@@ -1,5 +1,7 @@
 ---
 - hosts: all
+  become: yes
+  become_method: sudo
   vars:
     jenkins_package_state: latest
     docker_users:
