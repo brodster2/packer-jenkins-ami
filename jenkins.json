@@ -21,8 +21,14 @@
         "ssh_username": "ubuntu",
         "ami_name": "Jenkins-{{timestamp}}"
     }],
-    "Provisioners": [{
-        "type": "ansible",
-        "playbook_file": "./jenkins.yml"
-    }]
+    "Provisioners": [
+        {
+            "type": "shell",
+            "inline": ["sudo apt-get install -y python"]
+        },
+        {
+            "type": "ansible",
+            "playbook_file": "./jenkins.yml"
+        }
+    ]
 }
