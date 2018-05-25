@@ -24,6 +24,7 @@
     "Provisioners": [
         {
             "type": "shell",
+	    "inline": ["sudo apt-get update && sudo apt-get upgrade -y"],
             "inline": ["sudo apt-get install -y python"]
         },
         {
